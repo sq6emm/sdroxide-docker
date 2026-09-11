@@ -11,4 +11,4 @@ RUN dpkg -i sdroxide-v1.6.6-linux-x86_64.deb && rm -f sdroxide-v1.6.6-linux-x86_
 EXPOSE 4950
 
 ENTRYPOINT ["sdroxide"]
-CMD ["--server", "--listen", "0.0.0.0:4950"]
+CMD ["--server"]
