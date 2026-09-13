@@ -12,5 +12,7 @@ RUN dpkg -i sdroxide-${VER}-linux-x86_64.deb && rm -f sdroxide-${VER}-linux-x86_
 
 EXPOSE 4950
 
+USER ubuntu
+
 ENTRYPOINT ["sdroxide"]
 CMD ["--server"]
