@@ -12,6 +12,8 @@ RUN dpkg -i sdroxide-${VER}-linux-x86_64.deb && rm -f sdroxide-${VER}-linux-x86_
 
 EXPOSE 4950
 
+RUN mkdir -p /home/ubuntu/.config/sdroxide && chown -R ubuntu:ubuntu /home/ubuntu/.config
+
 USER ubuntu
 
 ENTRYPOINT ["sdroxide"]
