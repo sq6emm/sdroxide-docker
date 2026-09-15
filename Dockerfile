@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-ENV VER=v1.6.6
+ENV VER=v1.6.7
 
 RUN apt-get update && apt-get full-upgrade -y && apt-get install -y curl && \
 	apt-get install -y libasound2t64 && \
